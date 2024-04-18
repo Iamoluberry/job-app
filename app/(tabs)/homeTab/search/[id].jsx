@@ -88,7 +88,7 @@ const JobSearch = () => {
                 renderItem={({ item }) => (
                     <NearbyJobCard
                         job={item}
-                        handleNavigate={() => router.push(`/job-details/${item.job_id}`)}
+                        handleNavigate={() => router.push(`/homeTab/job-details/${item.job_id}`)}
                     />
                 )}
                 keyExtractor={(item) => item.job_id}
